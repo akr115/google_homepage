@@ -1,33 +1,54 @@
 <!DOCTYPE html>
 <style>
+#navbar{
+  list-style-type:none;
+  margin-left: 0px;
+  padding: 0px;
+  overflow: hidden;
+ 
+}
+li{
+  float: right;
+  
+}
 #container{
 display: flex;
+flex-direction: column;
 justify-content: center;
+align-items: center;
+padding-top:350px;
 
 }
 #logo{
-
-    margin-top: 250px;
-    width: 272px;
-    height: 92px;
-    position: fixed;
+width: 272px;
+height: 92px;
 
 }
-
-
 
 #search_bar{
-  margin-top: 375px;
-  width: 600px;
-  
+ margin-top: 50px;
+ width: 600px; 
+height: 35px;
+border-radius: 20px;
+padding-left: 10px;
+padding-right: 10px;
 }
 #submit_bar{
-  
+  margin-top: 15px;
+  margin-left: 25px;
 }
 
 </style>
 <html>
 <body>
+  
+  <ul id = "navbar">
+    <li>Gmail</li>
+    <li>Images</li>
+    <li>Google Account</li>
+    <li>Other...</li>
+  </ul>
+  
     <div id = container>
 <img src = "https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" id = "logo" alt = "Google">
 <form id = "google_form">
