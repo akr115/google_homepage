@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <style>
 #navbar{
-  list-style-type:none;
-  margin-left: 0px;
-  padding: 0px;
-  overflow: hidden;
+  
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-end;
+  list-style-type: none;
+  margin:0px;
+padding: 0px;;
  
 }
-li{
-  float: right;
+#navbar_list{
+ margin-right: 10px; 
+
   
 }
 #container{
@@ -16,7 +20,8 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-padding-top:350px;
+padding-top:300px;
+padding-left: 20px;
 
 }
 #logo{
@@ -37,16 +42,18 @@ padding-right: 10px;
   margin-top: 15px;
   margin-left: 25px;
 }
-
 </style>
 <html>
 <body>
   
   <ul id = "navbar">
-    <li>Gmail</li>
-    <li>Images</li>
-    <li>Google Account</li>
-    <li>Other...</li>
+    <li id = "navbar_list">Gmail</li>
+    <li id = "navbar_list">Images</li>
+    <li id = "navbar_list" >Account</li>
+    <li id = "navbar_list" >Other...</li>
+    
+    
+   
   </ul>
   
     <div id = container>
