@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <style>
+
 #navbar{
   
   display: flex;
@@ -12,8 +13,6 @@ padding: 0px;;
 }
 #navbar_list{
  margin-right: 10px; 
-
-  
 }
 #container{
 display: flex;
@@ -42,18 +41,35 @@ padding-right: 10px;
   margin-top: 15px;
   margin-left: 25px;
 }
+#footer{
+  background-color: #f2f2f2;
+  position: fixed;
+bottom: 0;
+width: 100%;
+overflow: hidden;
+list-style-type: none;
+padding-bottom: 20px;;
+margin: 0px;
+padding-left: 0px;
+border-top-width: 1px;
+border-top-style:solid;
+border-top-color: #d5d5d5;
+padding-top:20px;
+}
+#footer_list{
+margin-right: 10px;
+display:block;
+float:left;
+}
 </style>
 <html>
 <body>
   
   <ul id = "navbar">
-    <li id = "navbar_list">Gmail</li>
-    <li id = "navbar_list">Images</li>
-    <li id = "navbar_list" >Account</li>
-    <li id = "navbar_list" >Other...</li>
-    
-    
-   
+    <li id = "navbar_list"><a href = "#">Gmail</a></li>
+    <li id = "navbar_list"><a href = "#">Images</a></li>
+    <li id = "navbar_list"><a href = "#">Account</a></li>
+    <li id = "navbar_list" ><a href = "#">Other...</a></li>
   </ul>
   
     <div id = container>
@@ -61,10 +77,19 @@ padding-right: 10px;
 <form id = "google_form">
  <input type = "text" placeholder = "Search..." id = "search_bar">
 <br />
-
- <input type = "submit" value = "Google Search"  id = "submit_bar">
-
+ 
+<input type = "submit" value = "Google Search"  id = "submit_bar">
 </form>
 </div>
+
+<ul id = "footer">
+<li id = "footer_list"><a href = "#">Advertising</a></li>
+<li id = "footer_list"><a href = "#">Business</a></li>
+<li id = "footer_list"><a href = "#">About</a></li>
+<li id = "footer_list"><a href ="#">How Search works</a></li>
+<li id = "footer_list" style = "float:right"><a href ="#">Settings</a></li>
+<li id = "footer_list" style = "float:right"><a href = "#">Terms</a></li>
+<li id = "footer_list" style = "float:right"><a href = "#">Privacy</a></li>
+</ul>
 </body>
 </html>
